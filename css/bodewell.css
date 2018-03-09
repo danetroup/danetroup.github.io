@@ -18,6 +18,14 @@ video {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+  display: none;
+}
+.poster {
+  background: url(../video/Snapshots/its-clark.jpg) no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  height: 100%;
 }
 .vignette {
   background: rgba(243, 134, 0, 0.36);
