@@ -1,0 +1,51 @@
+:root {
+
+}
+body {
+  background: rgba(243, 134, 0, 0.36);
+  font: 1rem/1.1 "Montserrat", sans-serif;
+  margin: 0;
+}
+section {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+video {
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.vignette {
+  background: rgba(243, 134, 0, 0.36);
+  background-blend-mode: overlay;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+h1 {
+  font-size: calc(.8vw + .8vh + .2vmin);
+  color: #fff;
+  font-size: 4rem;
+  margin: 3rem;
+  position: absolute;
+
+  width: 100%;
+  z-index: 2;
+}
+
+p{
+  z-index: 2;
+  position: absolute;
+  color: #fff;
+  left: 30px;
+  bottom: 30px;
+  width: 40vw;
+
+}
