@@ -14,8 +14,11 @@
   color: #fff;
   text-decoration: none;
 }
+.btn:hover{
+  border: 2px solid #fff;
+}
 body {
-  background: rgba(243, 134, 0, 0.36);
+  background-color: #fff;
   font: 1rem/1.1 "Montserrat", sans-serif;
   margin: 0;
 }
@@ -32,6 +35,8 @@ video {
   top: 50%;
   transform: translate(-50%, -50%);
 
+
+
 }
 .poster {
   background: url(../video/Snapshots/its-clark.jpg) no-repeat center center fixed;
@@ -41,7 +46,9 @@ video {
   height: 100%;
 }
 .vignette {
-  background: rgba(243, 134, 0, 0.36);
+
+  background: rgba(0, 0, 0, .15);
+  background-size: cover;
   background-blend-mode: overlay;
   height: 100%;
   left: 0;
@@ -103,6 +110,7 @@ p{
   width: 36vw;
   padding: 3vw;
   background: rgba(0, 0, 0, 0.26);
+  border-radius: 5px;
 
 }
 
@@ -127,6 +135,10 @@ p{
   float: left;
   font-size: 1vw;
   margin-left: 1vw;
+}
+
+.tnp-submit:hover{
+  background-color: #00cc1a;
 }
 
  .email-list input[type=email] {
