@@ -2,6 +2,10 @@
 
 }
 
+.page{
+
+}
+
 .btn{
   display: block;
   padding: 10px 20px;
@@ -34,9 +38,6 @@ video {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-
-
-
 }
 .poster {
   background: url(../video/Snapshots/its-clark.jpg) no-repeat center center fixed;
@@ -46,7 +47,6 @@ video {
   height: 100%;
 }
 .vignette {
-
   background: rgba(0, 0, 0, .15);
   background-size: cover;
   background-blend-mode: overlay;
@@ -59,35 +59,66 @@ video {
 }
 
 .logo{
+
+  width: 40vw;
   position: absolute;
   z-index: 2;
-  width: 20vw;
   top: 3vw;
   left: 3vw;
 }
 
-.hero-copy{
+.message{
 
   display: block;
   z-index: 2;
   position: absolute;
-  color: #fff;
   left: 3vw;
   bottom: 3vw;
-  width: 45vw;
-
+  width: 94vw;
 
 }
+
+
+.hero-copy{
+
+  color: #fff;
+  width: 82vw;
+  display: block;
+  position: relative;
+  padding: 6vw;
+
+}
+
 h1 {
-
-  font-size: 4.75vw;
-
+  font-size: 8vw;
 }
 
 p{
- font-size: 1.8vw;
- line-height: 2.5vw;
+ font-size: 14px;
+ line-height: normal;
 }
+
+.email-list{
+  width: 82vw;
+  padding: 6vw;
+
+  display: block;
+
+  position: relative;
+  color: #fff;
+
+  background: rgba(0, 0, 0, 0.26);
+  border-radius: 5px;
+
+}
+
+.email-list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 
 .spacer{
   width: 100%;
@@ -99,20 +130,7 @@ p{
   margin: 0;
 }
 
-.email-list{
 
-  display: block;
-  z-index: 2;
-  position: absolute;
-  color: #fff;
-  right: 3vw;
-  bottom: 3vw;
-  width: 36vw;
-  padding: 3vw;
-  background: rgba(0, 0, 0, 0.26);
-  border-radius: 5px;
-
-}
 
 .email-list p{
   font-size: 14px;
@@ -125,15 +143,18 @@ p{
 }
 
 .tnp-submit{
+
+  width: 30vw;
+
   height: 50px;
   background-color: #00b71a;
   color: #fff;
   border: none;
   border-radius: 0;
-  width: 10vw;
+
   display: block;
   float: left;
-  font-size: 1vw;
+  font-size: 14px;
   margin-left: 1vw;
 }
 
@@ -142,9 +163,11 @@ p{
 }
 
  .email-list input[type=email] {
-   float: left;
-    width: 25vw;
+
+    width: 45vw;
+
     padding: 10px;
+    float: left;
     display: block;
     border: 1px solid #ddd;
     border-color: #ddd;
@@ -156,4 +179,55 @@ p{
     line-height: normal;
     box-sizing: border-box;
     height: 50px;
+}
+
+
+@media only screen and (min-width : 699px) {
+  /* Styles for above hand helds */
+
+  .page{
+    min-width: 1024px;
+
+  }
+
+  h1 {
+
+    font-size: 4.75vw;
+
+  }
+
+  p{
+   font-size: 1.8vw;
+   line-height: 2.5vw;
+  }
+
+  .hero-copy{
+
+    width: 45vw;
+    padding: 0;
+
+  }
+
+  .email-list{
+    width: 36vw;
+    padding: 3vw;
+    float: right;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+  }
+
+  .logo{
+
+    width: 20vw;
+  }
+
+  .email-list input[type=email] {
+     width: 25vw;
+   }
+
+   .tnp-submit{
+     width: 10vw;
+   }
 }
