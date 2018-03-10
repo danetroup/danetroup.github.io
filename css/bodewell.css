@@ -126,12 +126,12 @@ p{
   display: block;
   float: left;
   font-size: 1vw;
-
+  margin-left: 1vw;
 }
 
  .email-list input[type=email] {
    float: left;
-    width: 26vw;
+    width: 25vw;
     padding: 10px;
     display: block;
     border: 1px solid #ddd;
