@@ -60,7 +60,7 @@ video {
   height: 100%;
 }
 .vignette {
-  background: rgba(0, 0, 0, .15);
+  background: rgba(0, 0, 0, .25);
   background-size: cover;
   background-blend-mode: overlay;
   height: 100%;
@@ -121,7 +121,7 @@ p{
   position: relative;
   color: #fff;
 
-  background: rgba(0, 0, 0, 0.26);
+  background: rgba(0, 0, 0, 0.46);
   border-radius: 5px;
 
 }
@@ -200,6 +200,10 @@ p{
 
 @media only screen and (min-width : 699px) {
   /* Styles for above hand helds */
+
+  .vignette {
+    background: rgba(0, 0, 0, .15);
+  }
 
   .page{
     min-width: 1024px;
