@@ -19,7 +19,7 @@
 }
 
 .btn{
-  
+
   padding: 10px 20px;
   font-size: 14px;
   border: 1px solid #fff;
@@ -98,12 +98,13 @@ video {
   width: 82vw;
   display: block;
   position: relative;
-  padding: 6vw;
+  padding: 6vw 3vw;
 
 }
 
 h1 {
-  font-size: 8vw;
+  font-size: 9vw;
+  font-weight: 300;
 }
 
 p{
@@ -146,13 +147,15 @@ p{
 
 
 .email-list p{
-  font-size: 14px;
+  font-size: 12px;
   line-height: normal;
   margin-bottom: 6vw;
 
 }
 .email-list h2{
   margin-top: 0;
+  font-size: 14;
+  font-weight: 300;
 }
 
 .tnp-submit{
@@ -228,7 +231,12 @@ p{
     position: absolute;
     bottom: 0px;
     right: 0px;
+    background: rgba(0, 0, 0, 0.26);
 
+  }
+
+  .email-list p{
+    margin-bottom: 1vw;
   }
 
   .logo{
