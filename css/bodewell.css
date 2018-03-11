@@ -103,13 +103,13 @@ video {
 }
 
 h1 {
-  font-size: 9vw;
+  font-size: 11vw;
   font-weight: 500;
 }
 
 p{
- font-size: 14px;
- line-height: normal;
+ font-size: 16px;
+ line-height: 22px;
 }
 
 .email-list{
