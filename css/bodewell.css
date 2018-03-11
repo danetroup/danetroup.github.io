@@ -6,20 +6,33 @@
 
 }
 
-.btn{
+.inline{
+  display: inline-block;
+}
+
+.nav{
   display: block;
-  padding: 10px 20px;
-  font-size: 18px;
-  border: 1px solid #fff;
   z-index: 2;
   position: absolute;
   right: 3vw;
   top: 3vw;
+}
+
+.btn{
+  
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 1px solid #fff;
+
   color: #fff;
   text-decoration: none;
 }
 .btn:hover{
   border: 2px solid #fff;
+}
+
+.text-light{
+  border: none;
 }
 body {
   background-color: #fff;
@@ -135,7 +148,7 @@ p{
 .email-list p{
   font-size: 14px;
   line-height: normal;
-  margin-bottom: 2vw;
+  margin-bottom: 6vw;
 
 }
 .email-list h2{
@@ -164,7 +177,7 @@ p{
 
  .email-list input[type=email] {
 
-    width: 45vw;
+    width: 50vw;
 
     padding: 10px;
     float: left;
