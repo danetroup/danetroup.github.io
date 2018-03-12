@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Bodewell Careers</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+
+        <link rel="stylesheet" href="css/bodewell.css">
+    </head>
+    <body>
+      <div class="content-page">
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+
+        <header>
+          <img class="logo" src="img/bodewell-logo.svg">
+          <div class="nav">
+
+            <a href="careers.html" class=" btn text-light inline ga-tracker" data-category="Content" data-label="Careers - Nav">Careers</a>
+
+            <a href="https://bodewell.us12.list-manage.com/subscribe/post?u=2cd95dfe088c5ca7e7065ddd8&id=fc47dbff81" class=" btn btn-light inline ga-tracker" data-category="Conversions" data-label="Sign Up - Nav">Sign Up</a>
+
+          </div>
+        </header>
+        <div class="content-banner">
+          <h1>Work with us</h1>
+        </div>
+
+        <div class="page-body">
+
+
+          <h1>Hey, Do you love dogs?</h1>
+          <p>We’re looking for talented dog lovers (very important) to join our passionate team of community advocates, software engineers, designers, system administrators, and project managers.</p>
+          <p>Interested? Apply below and we’ll set up a time to talk.</p>
+
+          <section class="job-post">
+            <h2>Internships</h2>
+            <p>Our 2017 internships have been filled. Please check back next year for Summer 2018 internships. Thanks!</p>
+          </section>
+
+          <section class="job-post">
+            <h2>Project Manager</h2>
+            <p>Know anyone who is a master of herding cats with enthusiasm and style? And by cats, we mean strategists, developers and designers.</p>
+            <a href="#">Apply Now</a>
+          </section>
+
+          <section class="job-post">
+            <h2>Node.js Developer</h2>
+            <p>When was the last time you got into an argument about PHP? We’re looking for passionate developers who preach open source software and practice what they preach.</p>
+            <a href="#">Apply Now</a>
+          </section>
+
+          <section class="job-post">
+            <h2>UX Designer</h2>
+            <p>Do you fill notebooks with wireframe sketches and cool ideas for mobile app interfaces? We have been looking for you. Show us your least favorite applications and what you wish was different.</p>
+            <a href="#">Apply Now</a>
+          </section>
+
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-115501864-1','auto');ga('send','pageview')
+
+            $('.ga-tracker').on('click', function() {
+
+              // I want to know on what page the event fired, as my links are on many pages.
+              var LOCATION = window.location.href
+
+              // The category of the event. On my site I have two - general tracker and social trackers.
+              var CATEGORY = this.data('category')
+
+              // The action that takes place. Example: On my social tracker I made it 'share'.
+              var ACTION = 'Click'
+
+              // The label. I add the label we pass in track(); function and add the location.
+              var LABEL = LOCATION + ' > ' + this.data('label')
+
+              // Send data to Google Analytics
+              ga('send', 'event', CATEGORY, ACTION, LABEL)
+
+            })
+        </script>
+
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>

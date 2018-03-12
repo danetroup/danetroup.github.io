@@ -57,6 +57,7 @@ video {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+  display: none;
 }
 .poster {
   background: url(../video/Snapshots/its-clark.jpg) no-repeat center center fixed;
@@ -64,6 +65,7 @@ video {
   background-size: cover;
   background-position: 50%;
   height: 100%;
+  display: block;
 }
 .vignette {
   background: rgba(0, 0, 0, .25);
@@ -203,13 +205,64 @@ p{
     height: 50px;
 }
 
+.content-banner{
+  background-color: #00b71a;
+  color: #fff;
+  text-align: center;
+  padding: 14vw 5vw 2vw 5vw;
+  text-transform: uppercase;
+}
+
+.page-body{
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 6vw;
+
+}
+
+.job-post{
+  margin: 10vw 0;
+}
+
+.job-post a{
+  color: #00b71a;
+  text-decoration: none;
+  font-size: 4vw;
+  font-weight: 600;
+}
+
 
 @media only screen and (min-width : 699px) {
   /* Styles for above hand helds */
 
+  .content-banner{
+    background-color: #00b71a;
+    color: #fff;
+    text-align: center;
+    padding: 7vw 5vw 2vw 5vw;
+    text-transform: uppercase;
+  }
+
+  .job-post{
+    margin: 6vw 0;
+  }
+
+  .job-post a{
+    font-size: 1.8vw;
+  }
+
   .vignette {
     background: rgba(0, 0, 0, .15);
   }
+
+  .poster {
+    display: none;
+  }
+
+  video{
+    display: block;
+  }
+
 
   .page{
     min-width: 1024px;
