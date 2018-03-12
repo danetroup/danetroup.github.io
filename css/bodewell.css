@@ -34,6 +34,12 @@
 .text-light{
   border: none;
 }
+
+.text-light:hover{
+  border: none;
+  text-decoration: underline;
+}
+
 body {
   background-color: #fff;
   font: 1rem/1.1 "Montserrat", sans-serif;

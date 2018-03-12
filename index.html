@@ -36,8 +36,11 @@
           </div>
         </section>
         <div class="nav">
-          <a class="btn text-light inline" href="#">Careers</a>
-          <a class="btn btn-light inline" href="https://bodewell.us12.list-manage.com/subscribe/post?u=2cd95dfe088c5ca7e7065ddd8&id=fc47dbff81">Sign Up</a>
+
+          <a href="https://bodewell.us12.list-manage.com/subscribe/post?u=2cd95dfe088c5ca7e7065ddd8&id=fc47dbff81" class=" btn text-light inline ga-tracker" data-category="Content" data-label="Careers - Nav">Careers</a>
+
+          <a href="https://bodewell.us12.list-manage.com/subscribe/post?u=2cd95dfe088c5ca7e7065ddd8&id=fc47dbff81" class=" btn btn-light inline ga-tracker" data-category="Conversions" data-label="Sign Up - Nav">Sign Up</a>
+
         </div>
         <div class="message">
           <section class="hero-copy">
@@ -64,8 +67,10 @@
           	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
               <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
               <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2cd95dfe088c5ca7e7065ddd8_0dcf6a751a" tabindex="-1" value=""></div>
-              <div class="clear"><input type="submit" value="COUNT ME IN" name="subscribe" id="mc-embedded-subscribe" class="button tnp-submit"></div>
+              <div class="clear"><input type="submit" value="COUNT ME IN" name="subscribe" id="mc-embedded-subscribe" class=" button tnp-submit ga-tracker" data-category="Content" data-label="Careers - Nav"></div>
               </div>
+
+
           </form>
           </div>
 
@@ -87,7 +92,27 @@
         <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
             ga('create','UA-115501864-1','auto');ga('send','pageview')
+
+            $('.ga-tracker').on('click', function() {
+
+              // I want to know on what page the event fired, as my links are on many pages.
+              var LOCATION = window.location.href
+
+              // The category of the event. On my site I have two - general tracker and social trackers.
+              var CATEGORY = this.data('category')
+
+              // The action that takes place. Example: On my social tracker I made it 'share'.
+              var ACTION = 'Click'
+
+              // The label. I add the label we pass in track(); function and add the location.
+              var LABEL = LOCATION + ' > ' + this.data('label')
+
+              // Send data to Google Analytics
+              ga('send', 'event', CATEGORY, ACTION, LABEL)
+
+            })
         </script>
+
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
     </body>
 </html>
